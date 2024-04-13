@@ -1,0 +1,76 @@
+Installing dependencies for macOS.
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.44.0: 1,649 files, 50.8MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Pouring googletest--1.14.0.arm64_ventura.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/googletest/1.14.0: 75 files, 2.2MB
+==> Running `brew cleanup googletest`...
+==> Pouring glfw--3.4.arm64_ventura.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/glfw/3.4: 15 files, 856.7KB
+==> Running `brew cleanup glfw`...
+==> Pouring glew--2.2.0_1.arm64_ventura.bottle.2.tar.gz
+🍺  /opt/homebrew/Cellar/glew/2.2.0_1: 38 files, 3.7MB
+==> Running `brew cleanup glew`...
+==> Pouring redis--7.2.4.arm64_ventura.bottle.tar.gz
+==> Caveats
+To start redis now and restart at login:
+  brew services start redis
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/redis/bin/redis-server /opt/homebrew/etc/redis.conf
+==> Summary
+🍺  /opt/homebrew/Cellar/redis/7.2.4: 14 files, 2.4MB
+==> Running `brew cleanup redis`...
+==> Pouring hiredis--1.2.0.arm64_ventura.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/hiredis/1.2.0: 52 files, 490.3KB
+==> Running `brew cleanup hiredis`...
+==> Pouring openal-soft--1.23.1.arm64_ventura.bottle.tar.gz
+==> Caveats
+openal-soft is keg-only, which means it was not symlinked into /opt/homebrew,
+because macOS provides OpenAL.framework.
+
+If you need to have openal-soft first in your PATH, run:
+  echo 'export PATH="/opt/homebrew/opt/openal-soft/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openal-soft you may need to set:
+  export LDFLAGS="-L/opt/homebrew/opt/openal-soft/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/openal-soft/include"
+
+For pkg-config to find openal-soft you may need to set:
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/openal-soft/lib/pkgconfig"
+==> Summary
+🍺  /opt/homebrew/Cellar/openal-soft/1.23.1: 29 files, 1.2MB
+==> Running `brew cleanup openal-soft`...
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> redis
+To start redis now and restart at login:
+  brew services start redis
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/redis/bin/redis-server /opt/homebrew/etc/redis.conf
+==> openal-soft
+openal-soft is keg-only, which means it was not symlinked into /opt/homebrew,
+because macOS provides OpenAL.framework.
+
+If you need to have openal-soft first in your PATH, run:
+  echo 'export PATH="/opt/homebrew/opt/openal-soft/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openal-soft you may need to set:
+  export LDFLAGS="-L/opt/homebrew/opt/openal-soft/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/openal-soft/include"
+
+For pkg-config to find openal-soft you may need to set:
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/openal-soft/lib/pkgconfig"
+Dependencies installed.

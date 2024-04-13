@@ -21,7 +21,7 @@ You can now launch opensai with the provided script (you can provide as an optio
 ```
 sh launch.sh
 ```
-And if you want to use the ui, you can open a browser and navigate to localhost:8000 (give it a few seconds for the web server to start)
+And if you want to use the ui, you can open a browser and navigate to `localhost:8000` (give it a few seconds for the web server to start)
 From the UI, you can load a config file from the config_folder/main_configs folder and interact with the robot controllers
 
 ## Uninstall instructions
