@@ -27,5 +27,14 @@ From the UI, you can load a config file from the config_folder/main_configs fold
 ## Uninstall instructions
 The core libraries are installed for the current OS user, and the main application is not installed globally. If you want to remove the core libraries install (to use different versions of those in other applications for example), call the uninstall_core.sh script. Be warned that it removes all installation of the sai2 core libraries, not only this one.
 
+# OpenSai_main
+## Application Repositories
+```Shell
+# git submodule add URL_of_submodule_repository path_to_submodule
+git submodule add git@github.com:Zi-ang-Cao/STF_CS225A_HW.git STF_CS225A_HW
 
+git submodule init
+
+git submodule update
+```
 

@@ -1,0 +1,3 @@
+[submodule "STF_CS225A_HW"]
+	path = STF_CS225A_HW
+	url = git@github.com:Zi-ang-Cao/STF_CS225A_HW.git
